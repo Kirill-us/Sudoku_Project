@@ -1,1 +1,1 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=100&size=29&pause=1000&width=1000&lines=A+project+by+first-year+students+from+the+MIPT+AES+FALT" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=100&size=29&pause=1000&color=93F75B&background=68BDFF00&center=true&vCenter=true&width=1000&lines=A+project+by+first-year+students+from+the+MIPT+AES+FALT" alt="Typing SVG" /></a>
