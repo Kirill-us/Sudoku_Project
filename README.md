@@ -1,1 +1,3 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=100&size=29&pause=1000&color=93F75B&background=68BDFF00&center=true&vCenter=true&width=1000&lines=A+project+by+first-year+students+from+the+MIPT+AES+FALT" alt="Typing SVG" /></a>
+
+[![GitHub Stats Terminal](https://github-stats-terminal-style-five.vercel.app/api/stats?username=kirill&theme=tokyonight)](https://github.com/your-username)
