@@ -18,6 +18,8 @@ public:
     Board generateSolvedBoard();
 
     Board generatePuzzle(Difficulty difficulty);
+
+    int countEmptyCells(const Board& board);
 private:
     std::mt19937 rng_;
 

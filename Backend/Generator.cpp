@@ -134,3 +134,17 @@ for (int i = 0; i < 81 && removed < cellsToRemove; ++i) {
 
     return result;
 }
+
+int Generator::countEmptyCells(const Board& board) {
+    int emptyCells = 0;
+
+    for (int row = 0; row < 9; ++row) {
+        for (int col = 0; col < 9; ++col) {
+            if (board.getCell(row, col) == 0) {
+                ++emptyCells;
+            }
+        }
+    }
+
+    return emptyCells;
+}
