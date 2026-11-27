@@ -1,36 +1,31 @@
 #include <iostream>
-#include "Backend/Board.h"
+#include "Backend/Generator.h"
+#include "Backend/Solver.h"
 
 int main() {
-    Board board;
+    Generator generator;
 
-    Board::Grid puzzle = {};
+    Board board = generator.generatePuzzle(Difficulty::Hard);
 
-    puzzle[0][0] = 5;
-    puzzle[0][1] = 3;
-    puzzle[1][0] = 6;
+    std::cout << "Generated Sudoku:\n\n";
 
-    board.loadPuzzle(puzzle);
+    for (int row = 0; row < 9; ++row) {
+        for (int col = 0; col < 9; ++col) {
+            int value = board.getCell(row, col);
 
-    std::cout << "Cell (0, 0): "
-              << board.getCell(0, 0) << '\n';
+            if (value == 0) {
+                std::cout << ". ";
+            } else {
+                std::cout << value << " ";
+            }
+        }
 
-    std::cout << "Cell (0, 2): "
-              << board.getCell(0, 2) << '\n';
+        std::cout << '\n';
+    }
 
-    // Попытка изменить исходную клетку
-    std::cout << "Change given cell: "
-              << board.setCell(0, 8, 7) << '\n';
+    Solver solver;
 
-    // Заполнение пустой клетки
-    std::cout << "Change empty cell: "
-              << board.setCell(0, 2, 4) << '\n';
-
-    std::cout << "New value: "
-              << board.getCell(0, 8) << '\n';
-
-    std::cout << "New value: "
-              << board.getCell(0, 2) << '\n';
+    int solutions = solver.countSolutions(board);
 
     return 0;
 }
